@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de tempo</title>
+    <style>
+
+        div{
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+
+            height: 350px;
+            column-gap: 50px;
+            row-gap: 10px;
+        }
+
+        h2#tempo{
+            align-self: center;
+            text-align: center;
+            flex: 0 1 100%;
+        }
+
+        .iniciar{
+            background: lightgreen;
+
+            border: 1px solid black;
+            border-radius: 5px;
+            flex: 0 1 250px;
+        }
+
+        .iniciar:hover{
+            background: rgb(165, 255, 165);
+        }
+
+        .parar{
+            background:tomato;
+
+            border: 1px solid black;
+            border-radius: 5px;
+            flex: 0 1 250px;
+        }
+
+        .parar:hover{
+            background: rgb(255, 123, 100);
+        }
+
+        .reiniciar{
+            background: wheat;
+
+            border: 1px solid black;
+            border-radius: 5px;
+            flex: 0 1 250px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2 id="tempo">0</h2>
+        <button onclick="ativarContagem()" class="iniciar">Ativar Contagem</button>
+        <button onclick="desativarContagem()" class="parar">Parar Contagem</button>
+        <button onclick="reiniciarContagem()" class="reiniciar">Reiniciar Contagem</button>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
